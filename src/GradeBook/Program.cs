@@ -6,7 +6,7 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            var numbers = new double[] { 12.7, 15.1, 10.2 };
+            var numbers = new[] { 12.7, 15.1, 10.2 };
 
             var result = numbers[0] + numbers[1] + numbers[2];
             Console.WriteLine(result);
