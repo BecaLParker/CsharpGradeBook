@@ -9,7 +9,7 @@ namespace GradeBook
         static void Main(string[] args)
         {
             var numbers = new[] { 12.7, 15.1, 10.2 };
-            List<double> grades = new List<double>();
+            var grades = new List<double>();
 
             var result = 0.0;
             foreach (double number in numbers)
