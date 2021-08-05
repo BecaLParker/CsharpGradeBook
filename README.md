@@ -1,6 +1,6 @@
 # CsharpGradeBook
 
-Project to learn the fundamentals of C#
+Console application to learn the fundamentals of C#  
 
 ## Requirements
 >*"We need an electronic grade book to read the scores of an individual student and then compute some simple statistics from the scores.*  
@@ -8,11 +8,19 @@ Project to learn the fundamentals of C#
 ~
 The Project Manager
 
+## Setup
+1. Clone this repository `git clone https://github.com/BecaLParker/CsharpGradeBook.git`
+2. Navigate to the GradeBook directory `cd src/GradeBook/`
+
 ## What does this code do? (user instructions and example outputs)
 ### Greets by name
-- Navigate to the GradeBook dir
 - Type `dotnet run -- Amy` (substitute your name for `Amy`)
 > `Hello, Amy!`
+
+### Returns the average grade to one decimal place
+- Type `dotnet run`
+> `Hello!`  
+> `Average = 17.9`
 
 ## Credits
 [C# Fundamentals by Scott Allen](https://app.pluralsight.com/library/courses/csharp-fundamentals-dev/table-of-contents)
