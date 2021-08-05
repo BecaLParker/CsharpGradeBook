@@ -8,8 +8,11 @@ namespace GradeBook
         {
             var numbers = new[] { 12.7, 15.1, 10.2 };
 
-            var result = numbers[0] + numbers[1] + numbers[2];
-            Console.WriteLine(result);
+            var result = 0.0;
+            foreach (double number in numbers)
+            {
+                result += number;
+            }
 
             if (args.Length > 0)
             {
