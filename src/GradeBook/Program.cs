@@ -28,7 +28,7 @@ namespace GradeBook
                 Console.WriteLine("Hello!");
             }
 
-            Console.WriteLine($"Average = {average}");
+            Console.WriteLine($"Average = {average:N1}");
         }
     }
 }
