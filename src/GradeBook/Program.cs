@@ -16,11 +16,16 @@ namespace GradeBook
 
             var total = 0.0;
             var highGrade = double.MinValue;
+            var lowGrade = double.MaxValue;
             foreach (double number in grades)
             {
                 if (number > highGrade)
                 {
                     highGrade = number;
+                }
+                if (number < lowGrade)
+                {
+                    lowGrade = number;
                 }
                 total += number;
             }
@@ -29,6 +34,7 @@ namespace GradeBook
 
             Console.WriteLine($"Average = {average:N1}");
             Console.WriteLine($"Highest grade = {highGrade:N1}");
+            Console.WriteLine($"Lowest grade = {lowGrade:N1}");
         }
     }
 }

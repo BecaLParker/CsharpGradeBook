@@ -23,5 +23,9 @@ The Project Manager
 - Type `dotnet run`  
 > `Highest grade = 56.1`
 
+### Returns the lowest grade to one decimal place
+- Type `dotnet run`  
+> `Lowest grade = 4.1`
+
 ## Credits
 [C# Fundamentals by Scott Allen](https://app.pluralsight.com/library/courses/csharp-fundamentals-dev/table-of-contents)
