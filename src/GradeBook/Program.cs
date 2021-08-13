@@ -19,15 +19,6 @@ namespace GradeBook
 
             var average = total / grades.Count;
 
-            if (args.Length > 0)
-            {
-                Console.WriteLine($"Hello, {args[0]}!");
-            }
-            else
-            {
-                Console.WriteLine("Hello!");
-            }
-
             Console.WriteLine($"Average = {average:N1}");
         }
     }

@@ -14,13 +14,9 @@ The Project Manager
 2. Navigate to the GradeBook directory `cd src/GradeBook/`
 
 ## What does this code do? (user instructions and example outputs)
-### Greets by name
-- Type `dotnet run -- Amy` (substitute your name for `Amy`)
-> `Hello, Amy!`
 
 ### Returns the average grade to one decimal place
-- Type `dotnet run`
-> `Hello!`  
+- Type `dotnet run`  
 > `Average = 17.9`
 
 ## Credits
