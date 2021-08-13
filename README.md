@@ -19,5 +19,9 @@ The Project Manager
 - Type `dotnet run`  
 > `Average = 17.9`
 
+### Returns the highest grade to one decimal place
+- Type `dotnet run`  
+> `Highest grade = 56.1`
+
 ## Credits
 [C# Fundamentals by Scott Allen](https://app.pluralsight.com/library/courses/csharp-fundamentals-dev/table-of-contents)

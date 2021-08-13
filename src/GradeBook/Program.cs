@@ -15,14 +15,20 @@ namespace GradeBook
             grades.Add(56.1);
 
             var total = 0.0;
+            var highGrade = double.MinValue;
             foreach (double number in grades)
             {
+                if (number > highGrade)
+                {
+                    highGrade = number;
+                }
                 total += number;
             }
 
             var average = total / grades.Count;
 
             Console.WriteLine($"Average = {average:N1}");
+            Console.WriteLine($"Highest grade = {highGrade:N1}");
         }
     }
 }
