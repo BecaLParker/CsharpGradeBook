@@ -19,14 +19,8 @@ namespace GradeBook
             var lowGrade = double.MaxValue;
             foreach (double number in grades)
             {
-                if (number > highGrade)
-                {
-                    highGrade = number;
-                }
-                if (number < lowGrade)
-                {
-                    lowGrade = number;
-                }
+                highGrade = Math.Max(number, highGrade);
+                lowGrade = Math.Min(number, lowGrade);
                 total += number;
             }
 
