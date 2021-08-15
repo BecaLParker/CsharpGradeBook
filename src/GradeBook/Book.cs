@@ -17,23 +17,23 @@ namespace GradeBook
 
         }
 
-        public void ShowStatistics()
+        public Statistics GetStatistics()
         {
+            var result = new Statistics();
+            result.Average = 0.0;
             var total = 0.0;
-            var highGrade = double.MinValue;
-            var lowGrade = double.MaxValue;
-            foreach (double number in grades)
+            result.High = double.MinValue;
+            result.Low = double.MaxValue;
+            foreach (double grade in grades)
             {
-                highGrade = Math.Max(number, highGrade);
-                lowGrade = Math.Min(number, lowGrade);
-                total += number;
+                result.High = Math.Max(grade, result.High);
+                result.Low = Math.Min(grade, result.Low);
+                total += grade;
             }
 
-            var average = total / grades.Count;
+            result.Average = total / grades.Count;
 
-            Console.WriteLine($"Average = {average:N1}");
-            Console.WriteLine($"Highest grade = {highGrade:N1}");
-            Console.WriteLine($"Lowest grade = {lowGrade:N1}");
+            return result;
         }
 
         // fields (instance variables?)

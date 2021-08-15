@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+W4FjhQQHebep/vh21PGgZBybO0j4M/qsMhGxlWSz0LeQwAwLILlWSLfwnhzcrqHKBxq/hu1PBjvqMYbg7o8hg==",
+  "dgSpecHash": "5f4vWACJNGSSvNkfwEuc1YsGgd05K+nRAyQz4qBbonCDkwJWUlVwr8RuGkiNEDXS1g6PMqkDb805X/vN/tId7A==",
   "success": true,
   "projectFilePath": "/home/beca/Projects/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj",
   "expectedPackageFiles": [

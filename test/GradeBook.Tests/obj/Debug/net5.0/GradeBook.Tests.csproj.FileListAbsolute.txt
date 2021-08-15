@@ -97,3 +97,10 @@
 /home/beca/Projects/gradebook/test/GradeBook.Tests/obj/Debug/net5.0/ref/GradeBook.Tests.dll
 /home/beca/Projects/gradebook/test/GradeBook.Tests/obj/Debug/net5.0/GradeBook.Tests.pdb
 /home/beca/Projects/gradebook/test/GradeBook.Tests/obj/Debug/net5.0/GradeBook.Tests.genruntimeconfig.cache
+/home/beca/Projects/gradebook/test/GradeBook.Tests/bin/Debug/net5.0/CoverletSourceRootsMapping
+/home/beca/Projects/gradebook/test/GradeBook.Tests/bin/Debug/net5.0/GradeBook.deps.json
+/home/beca/Projects/gradebook/test/GradeBook.Tests/bin/Debug/net5.0/GradeBook.runtimeconfig.json
+/home/beca/Projects/gradebook/test/GradeBook.Tests/bin/Debug/net5.0/GradeBook.runtimeconfig.dev.json
+/home/beca/Projects/gradebook/test/GradeBook.Tests/bin/Debug/net5.0/GradeBook
+/home/beca/Projects/gradebook/test/GradeBook.Tests/bin/Debug/net5.0/GradeBook.dll
+/home/beca/Projects/gradebook/test/GradeBook.Tests/bin/Debug/net5.0/GradeBook.pdb

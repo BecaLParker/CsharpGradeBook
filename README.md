@@ -27,5 +27,9 @@ The Project Manager
 - Type `dotnet run`  
 > `Lowest grade = 4.1`
 
+## Testing (xUnit)
+- Navigate to the testing project `cd ../../GradeBook/test/GradeBook.Tests`  
+- Type `dotnet test`
+
 ## Credits
 [C# Fundamentals by Scott Allen](https://app.pluralsight.com/library/courses/csharp-fundamentals-dev/table-of-contents)
