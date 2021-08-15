@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
-    class Book
+    public class Book
     {
         //  Constructor method (~ Ruby def initialize)
         public Book(string name)
