@@ -6,6 +6,24 @@ namespace GradeBook.Tests
     public class TypeTests
     {
         [Fact]
+        public void ValueTypesCanBeForcedToPassByRef()
+        {
+            var x = GetInt();
+            SetIntByRef(ref x);
+
+            Assert.Equal(42, x);
+        }
+
+        private void SetIntByRef(ref int x)
+        {
+            x = 42;
+        }
+        private int GetInt()
+        {
+            return 3;
+        }
+
+        [Fact]
         public void ValueTypesAlsoPassByValue()
         {
             var x = GetInt();
@@ -17,10 +35,6 @@ namespace GradeBook.Tests
         private void SetInt(int x)
         {
             x = 42;
-        }
-        private int GetInt()
-        {
-            return 3;
         }
 
         [Fact]
