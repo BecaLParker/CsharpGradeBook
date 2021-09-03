@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eAvD6Qqa5V/mS+OZzMLnnNbfSlg7O/a7M31Epe/XPLmdo6kRkuXYgecZGWVs+FmW4bk3kRU7zWm34RVgZSWthQ==",
+  "dgSpecHash": "DyHKEd83pfSHsDXlUnhx3Jkql/DSRgbkA3HfFOmWn+Row8hg/GBrPQ+nXluftwWBJu2r7XHhQj+U/etu6/7+fQ==",
   "success": true,
-  "projectFilePath": "/home/beca/Projects/gradebook/src/GradeBook/GradeBook.csproj",
+  "projectFilePath": "C:\\Users\\Beca.Parker\\RiderProjects\\CsharpGradeBook\\src\\GradeBook\\GradeBook.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
