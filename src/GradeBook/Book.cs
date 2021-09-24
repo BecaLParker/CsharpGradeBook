@@ -37,7 +37,7 @@ namespace GradeBook
                 result.Low = Math.Min(grades[index], result.Low);
                 total += grades[index];
                 index += 1;
-            } while((index + 1 ) <= grades.Count);
+            } while(index < grades.Count);
 
             result.Average = total / grades.Count;
 
