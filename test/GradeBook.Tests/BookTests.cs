@@ -6,7 +6,7 @@ namespace GradeBook.Tests
     public class BookTests
     {
         [Fact]
-        public void BookCalculatesAnAverageGrade()
+        public void BookCalculatesGradeStats()
         {
             //arrange
             var book = new Book("");
@@ -21,6 +21,23 @@ namespace GradeBook.Tests
             Assert.Equal(85.6, result.Average, 1);
             Assert.Equal(90.5, result.High, 1);
             Assert.Equal(77.3, result.Low, 1);
+        }
+
+        [Fact]
+        public void BookThowsExceptionTryingToAddInvalidGrades()
+        {
+            //arrange
+            var book = new Book("");
+
+            //assert and act
+            var toobig = Assert.Throws<ArgumentException>(() => book.AddGrade(105));
+            var toosmall = Assert.Throws<ArgumentException>(() => book.AddGrade(-1));
+
+            //assert exception message
+            Assert.Equal("Invalid value", toobig.Message);
+            Assert.Equal("Invalid value", toosmall.Message);
+
+
         }
     }
 }
