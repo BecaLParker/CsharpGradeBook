@@ -52,5 +52,27 @@ namespace GradeBook.Tests
 
 
         }
+
+        [Fact]
+        public void BookHandlesAddingLetterGrades()
+        {
+            //arrange
+            var book = new Book("");
+            book.AddLetterGrade('A');
+            book.AddLetterGrade('B');
+            book.AddLetterGrade('C');
+            book.AddLetterGrade('F');
+
+
+
+            //act
+            var result = book.GetStatistics();
+
+            //assert
+            Assert.Equal(60.0, result.Average, 1);
+            Assert.Equal(90.0, result.High, 1);
+            Assert.Equal(0.0, result.Low, 1);
+
+        }
     }
 }
