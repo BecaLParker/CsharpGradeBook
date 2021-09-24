@@ -24,6 +24,19 @@ namespace GradeBook.Tests
         }
 
         [Fact]
+        public void BookHandlesEmptyGrades()
+        {
+            //arrange
+            var book = new Book("");
+
+            //assert and act
+            var emptyness = Assert.Throws<ArgumentException>(() => book.GetStatistics());
+
+            //assert exception message
+            Assert.Equal("No grades found", emptyness.Message);
+        }
+
+        [Fact]
         public void BookThowsExceptionTryingToAddInvalidGrades()
         {
             //arrange

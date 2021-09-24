@@ -31,17 +31,22 @@ namespace GradeBook
             result.Low = double.MaxValue;
 
             var index = 0;
-            do
+            if (grades.Count > 0) 
             {
-                result.High = Math.Max(grades[index], result.High);
-                result.Low = Math.Min(grades[index], result.Low);
-                total += grades[index];
-                index += 1;
-            } while(index < grades.Count);
+                do
+                {
+                    result.High = Math.Max(grades[index], result.High);
+                    result.Low = Math.Min(grades[index], result.Low);
+                    total += grades[index];
+                    index += 1;
+                } while(index < grades.Count);
 
-            result.Average = total / grades.Count;
+                result.Average = total / grades.Count;
 
-            return result;
+                return result;
+            } else {
+                throw new ArgumentException($"No grades found");
+            }
         }
 
         // fields (instance variables?)
