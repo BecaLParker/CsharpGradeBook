@@ -19,6 +19,10 @@ The Project Manager
 - Type `dotnet run`  
 > `Average = 17.9`
 
+### Returns average letter grade
+- Type `dotnet run`
+> `Average Letter grade = B`
+
 ### Returns the highest grade to one decimal place
 - Type `dotnet run`  
 > `Highest grade = 56.1`
