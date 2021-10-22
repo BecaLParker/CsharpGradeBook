@@ -24,6 +24,10 @@ namespace GradeBook
 
                 try
                 {
+                    //TODO figure out how to use method overloading to handle letter grade input
+                    /*var letterGrade = char.Parse(input);
+                    book.AddGrade(letterGrade);*/
+                    
                     var grade = double.Parse(input);
                     book.AddGrade(grade);
                 }

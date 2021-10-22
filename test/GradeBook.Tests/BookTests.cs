@@ -48,8 +48,8 @@ namespace GradeBook.Tests
             var toosmall = Assert.Throws<ArgumentException>(() => book.AddGrade(-1));
 
             //assert exception message
-            Assert.Equal("Invalid value", toobig.Message);
-            Assert.Equal("Invalid value", toosmall.Message);
+            Assert.Equal("Invalid grade", toobig.Message);
+            Assert.Equal("Invalid grade", toosmall.Message);
 
 
         }
@@ -59,10 +59,10 @@ namespace GradeBook.Tests
         {
             //arrange
             var book = new Book("");
-            book.AddLetterGrade('A');
-            book.AddLetterGrade('B');
-            book.AddLetterGrade('C');
-            book.AddLetterGrade('F');
+            book.AddGrade('A');
+            book.AddGrade('B');
+            book.AddGrade('C');
+            book.AddGrade('F');
 
 
 
