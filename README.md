@@ -15,21 +15,19 @@ The Project Manager
 
 ## What does this code do? (user instructions and example outputs)
 
+### Asks user for grades to enter into a gradebook
+- Type `dotnet run --project .\src\GradeBook\GradeBook.csproj`
+> `Enter a grade or q to exit`
+> `95`
+
 ### Returns the average grade to one decimal place
-- Type `dotnet run`  
-> `Average = 17.9`
+After you've entered some grades, type `q` to see the stats of your gradebook. EG: 
+> `Average = 33.3
+Highest grade = 50.0
+Lowest grade = 20.0
+Average Letter grade = D
+`
 
-### Returns average letter grade
-- Type `dotnet run`
-> `Average Letter grade = B`
-
-### Returns the highest grade to one decimal place
-- Type `dotnet run`  
-> `Highest grade = 56.1`
-
-### Returns the lowest grade to one decimal place
-- Type `dotnet run`  
-> `Lowest grade = 4.1`
 
 ## Testing (xUnit)
 - Navigate to the testing project `cd ../../GradeBook/test/GradeBook.Tests`  
