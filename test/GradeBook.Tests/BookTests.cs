@@ -71,10 +71,10 @@ namespace GradeBook.Tests
         {
             //arrange
             var book = new Book("");
-            book.AddLetterGrade('A');
-            book.AddLetterGrade('B');
-            book.AddLetterGrade('C');
-            book.AddLetterGrade('F');
+            book.AddGrade('A');
+            book.AddGrade('B');
+            book.AddGrade('C');
+            book.AddGrade('F');
 
 
 

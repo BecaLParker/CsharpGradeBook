@@ -22,10 +22,19 @@ namespace GradeBook
                     break;
                 }
 
+                
+                
                 try
                 {
-                    var grade = double.Parse(input);
-                    book.AddGrade(grade);
+                    if (double.TryParse(input, out var grade))
+                    {
+                        book.AddGrade(grade);
+                    }
+                    else
+                    {
+                        var letterGrade = char.Parse(input);
+                        book.AddGrade(letterGrade);
+                    }
                 }
 
                 catch (ArgumentException ex)
