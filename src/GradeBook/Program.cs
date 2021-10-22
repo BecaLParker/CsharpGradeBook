@@ -22,14 +22,19 @@ namespace GradeBook
                     break;
                 }
 
+                
+                
                 try
                 {
-                    //TODO figure out how to use method overloading to handle letter grade input
-                    /*var letterGrade = char.Parse(input);
-                    book.AddGrade(letterGrade);*/
-                    
-                    var grade = double.Parse(input);
-                    book.AddGrade(grade);
+                    if (double.TryParse(input, out var grade))
+                    {
+                        book.AddGrade(grade);
+                    }
+                    else
+                    {
+                        var letterGrade = char.Parse(input);
+                        book.AddGrade(letterGrade);
+                    }
                 }
 
                 catch (ArgumentException ex)
