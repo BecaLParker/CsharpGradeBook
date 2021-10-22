@@ -9,7 +9,7 @@ namespace GradeBook
         public Book(string name)
         {
             grades = new List<double>();
-            Name = name;
+            _name = name;
         }
         public void AddGrade(double grade)
         {
@@ -95,6 +95,15 @@ namespace GradeBook
         // fields (instance variables?)
         // make private so we can add logic validation in class methods to prevent out-of-scope grades (eg 101) being added via grades.Add
         private List<double> grades;
-        public string Name;
+        
+        //Access modifier
+        public string Name
+        {
+            get => _name?.ToUpper();
+            set => _name = value ?? _name;
+        }
+        
+        // private field to store the underlying state of a property
+        private string _name;
     }
 }

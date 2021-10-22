@@ -6,6 +6,18 @@ namespace GradeBook.Tests
     public class BookTests
     {
         [Fact]
+        public void BookCanSetItsName()
+        {
+            //arrange
+            var namedBook = new Book("");
+
+            //act and assert
+            Assert.Equal("", namedBook.Name);
+            namedBook.Name = "Quackie";
+            Assert.Equal("QUACKIE", namedBook.Name);
+        }
+
+        [Fact]
         public void BookCalculatesGradeStats()
         {
             //arrange
@@ -48,8 +60,8 @@ namespace GradeBook.Tests
             var toosmall = Assert.Throws<ArgumentException>(() => book.AddGrade(-1));
 
             //assert exception message
-            Assert.Equal("Invalid value", toobig.Message);
-            Assert.Equal("Invalid value", toosmall.Message);
+            Assert.Equal("Invalid grade", toobig.Message);
+            Assert.Equal("Invalid grade", toosmall.Message);
 
 
         }

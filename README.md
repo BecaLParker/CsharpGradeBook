@@ -15,6 +15,8 @@ The Project Manager
 
 ## What does this code do? (user instructions and example outputs)
 
+//TODO something about book name
+
 ### Asks user for grades to enter into a gradebook
 Type `dotnet run --project .\src\GradeBook\GradeBook.csproj`
 > Enter a grade or q to exit 
